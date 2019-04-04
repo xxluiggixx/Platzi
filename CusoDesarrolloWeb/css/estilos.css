@@ -1,0 +1,319 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores
+
+/* gris oscuro = #1d252c:
+gris claro = #626262;
+background gris = #1b2127; 
+celeste =  #026fff;
+*/
+
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+}
+h1{
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: -.2px;
+    /* text-transform: uppercase; */
+    color: white;
+    /* text-decoration: underline; */
+    /* margin: 100px 50px 20px 30px; */
+   /* margin: 0 auto; /*centrar la imagen o el elemento*/
+   margin: 0;
+}
+h1 strong{
+    color: #026fff;
+}
+ h2{
+    color:#026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.project{
+    /* border-top: 10px double ;
+    border-right: 10px double;
+    border-left:10px double ;
+    border-bottom: 10px double; */
+    /* border-color: red;
+    border-style: double;
+    border-width: 15px; */
+    border: 1px solid gray;
+    border-radius: 10px; /*bordes redondeados*/
+    border-top-left-radius: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
+}
+
+.project-details {
+    width: 500px; /*estamos asignando un ancho al detalle*/
+   
+}
+.project-imageConteiner{
+    width: 500px; /*estamos asignando un ancho al detalle imagen*/
+
+}
+.hero {
+    height: 300px;
+    /* background-image: url('../Archivos/images/hero.jpg'); */
+    background-color: #1b2127;
+    /* background-size: 500px 300px;
+    background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-image{
+    object-fit: cover; /*  */
+}
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* fijar cabecera */
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+   
+}
+
+.menu{
+    height: inherit; /*esta propiedad debe heredarece en cada uno
+    Menu ->Header ol -> header ol li -> header a*/
+}
+.header ol{
+    display: flex;
+    height: inherit; /*esta propiedad debe heredarece en cada uno*/
+    
+}
+.header ol li{
+    height: inherit; /*esta propiedad debe heredarece en cada uno*/
+
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    height: inherit; /*esta propiedad debe heredarece en cada uno*/
+    padding: 0 10px;
+}
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure{
+    margin: 0;
+}
+
+
+.link {
+    color: blue
+}
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
+}
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap; /**/
+    justify-content: space-between;
+}
+.event{
+    /* border: 1px solid red; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+
+}
+.event-description{
+    text-align: left;
+}
+.event-url{
+    border: 1px solid #056fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+}
+.event-list-title{
+    margin-left: 20px;
+}
+.contacto{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+
+}
+.social-link.twitter{
+    background-image: url('../Archivos/images/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../Archivos/images/facebook.svg');
+    /* background-size: 50px 50px; */
+}
+.social-link.github{
+    background-image: url('../Archivos/images/github.svg');
+    /* background-size: 50px 50px; */
+}
+.social-link.instagram{
+    background-image: url('../Archivos/images/instagram.svg');
+    /* background-size: 50px 50px; */
+}
+.form-email input{
+    border-color: gray;
+    padding: 10px 20px 10px 30px;
+    background-image: url('../Archivos/images/envelope.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    /* margin: 10px auto 0; */
+
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
+}
+
+.container{
+    /*
+    se crea esta clase para que no tome todo el tamaño de la web
+    hay q heredar todas las propiedades de la clase head (en este caso),
+    para q los demas elementos tambien las hereden
+    */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-content: inherit;
+    height:inherit;
+    flex-wrap: inherit;
+}
+
+
+/* selector de etiqueta header - section - article -nav*/
+
+
+/* header {
+     background: greenyellow;
+ } */
+
+
+/* selector descendente*/
+
+
+/* body header div nav ol li a */
+
+
+/* selector de clase . */
+
+
+/* .link */
+
+
+/* selector de id */
+
+
+/* #principal */
